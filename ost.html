@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <link rel="stylesheet" href="./css/mouse.css">
+    <title>OST</title>
+</head>
+<body>
+
+    <div id="warp">
+
+    </div>
+    <!-- 햄버거 메뉴바 -->
+    <div class="overlay">
+        <div class="link-wrapper">
+            <a href="index.html"><span>HOME</span></a>
+            <a href="ost.html"><span>OST</span></a>
+            <a href="character.html"><span>CHARACTER</span></a>
+            <a href="bestscene.html"><span>BESTSCENE</span></a>
+            <a href="video.html"><span>VIDEO</span></a>
+            <a href="endand.html"><span>JIEUN</span></a>
+        </div> <!-- //link-wrapper -->
+    </div> <!-- //overlay -->    
+    <div class="navigation">
+        <div class="burger_deluxe">
+            <span class="burger_global top_bun"></span>
+            <span class="burger_global patty"></span>
+            <span class="burger_global bottom_bun"></span>
+        </div>
+    </div>
+    <!-- 햄버거 메뉴바 -->
+
+    <section id="ost">
+        <div id="tab-menu" class="tab-menu">
+                <ul>
+                    <li><a href="#" id="tabMenu1" class="selected"></a></li>
+                    <li><a href="#" id="tabMenu2"></a></li>
+                    <li><a href="#" id="tabMenu3"></a></li>
+                    <li><a href="#" id="tabMenu4"></a></li>
+                </ul>
+            </div>
+            <div class="tab-container">
+                <div class="tab-content selected">
+                    <div class="vinyl" onmouseover="PlaySound1('mySound1')"onmouseout="PauseSound1('mySound1')"></div>
+                    <audio id='mySound1' src='sound/DriveItLikeYouStoleIt.mp3'></audio>
+                </div>
+            <div class="tab-content">
+                <div class="vinyl" onmouseover="PlaySound2('mySound2')"onmouseout="PauseSound2('mySound2')"></div>
+                <audio id='mySound2' src='sound/TheRiddleOfTheModel.mp3'></audio>
+            </div>
+            <div class="tab-content">
+                <div class="vinyl" onmouseover="PlaySound3('mySound3')"onmouseout="PauseSound3('mySound3')"></div>
+                <audio id='mySound3' src='sound/ABeautifulSea.mp3'></audio>
+            </div>
+            <div class="tab-content">
+                <div class="vinyl" onmouseover="PlaySound4('mySound4')"onmouseout="PauseSound4('mySound4')"></div>
+                <audio id='mySound4' src='sound/ToFindYou.mp3'></audio>
+            </div>
+        </div>
+    </section>
+
+<script src="./js/ost.js"></script>
+<script src="./js/jquery-2.2.4.min.js"></script>
+<script src="./js/script.js" type="text/javascript"></script>
+</body>
+</html>
